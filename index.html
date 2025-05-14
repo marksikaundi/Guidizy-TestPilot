@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Data Science Datasets</title>
-    <link rel="stylesheet" href="/css/main.css"/>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Science Datasets</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/logo.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <svg
+          class="logo"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <!-- Central Node (Atom Core) -->
+          <circle class="central-node" cx="50" cy="50" r="8" fill="#3498db" />
 
-  <header>
-    <h1>Popular Data Science Datasets</h1>
-  </header>
+          <!-- Orbital Paths (Data Connections) -->
+          <ellipse
+            class="atom-orbit"
+            cx="50"
+            cy="50"
+            rx="30"
+            ry="20"
+            fill="none"
+            stroke="#3498db"
+            stroke-width="1.5"
+            transform="rotate(0, 50, 50)"
+          />
+          <ellipse
+            class="atom-orbit"
+            cx="50"
+            cy="50"
+            rx="25"
+            ry="35"
+            fill="none"
+            stroke="#2ecc71"
+            stroke-width="1.5"
+            transform="rotate(60, 50, 50)"
+          />
 
-  <div class="container">
-    <input type="text" id="search" placeholder="Search datasets..."/>
+          <!-- Data Points -->
+          <circle class="data-point" cx="75" cy="50" r="4" fill="#e74c3c" />
+          <circle class="data-point" cx="35" cy="30" r="3" fill="#f39c12" />
+          <circle class="data-point" cx="45" cy="75" r="5" fill="#9b59b6" />
+          <circle class="data-point" cx="25" cy="55" r="3.5" fill="#1abc9c" />
+          <circle class="data-point" cx="60" cy="25" r="4" fill="#3498db" />
+        </svg>
+        <span class="logo-text">DataSets</span>
+      </div>
+      <h1>Popular Data Science Datasets</h1>
+    </header>
 
-    <div id="dataset-list"></div>
-  </div>
-      <div class="guidizy-widget" data-guidizy-type="1" data-guidizy-profile="6d16c913-625a-4be7-9368-d3a1b27b0e38"></div> 
+    <div class="container">
+      <input type="text" id="search" placeholder="Search datasets..." />
 
-  <script src="/js/index.js"></script>
-  </script>
-    <script crossorigin src="https://guidizy-widget.s3.amazonaws.com/trial-index.js"></script>
-  <script src="https://unpkg.com/regenerator-runtime@0.13.1/runtime.js"></script>
+      <div id="dataset-list"></div>
+    </div>
+    <div
+      class="guidizy-widget"
+      data-guidizy-type="1"
+      data-guidizy-profile="6d16c913-625a-4be7-9368-d3a1b27b0e38"
+    ></div>
 
-</body>
+    <script src="/js/index.js"></script>
+    <script src="/js/logo.js"></script>
+    <script
+      crossorigin
+      src="https://guidizy-widget.s3.amazonaws.com/trial-index.js"
+    ></script>
+    <script src="https://unpkg.com/regenerator-runtime@0.13.1/runtime.js"></script>
+  </body>
 </html>
